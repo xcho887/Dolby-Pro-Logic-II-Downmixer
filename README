@@ -1,0 +1,22 @@
+# Dolby Pro Logic II Downmixer
+
+Real-time 5.1 channel to Dolby Pro Logic II audio downmixer for Windows.
+
+This application captures multi-channel (5.1) surround sound audio from Windows games or media players in real-time and encodes it into a Dolby Pro Logic II compatible matrix-encoded stereo signal using NAudio and WASAPI.
+
+Required
+
+To capture multi-channel audio in real-time, **VB-Audio Virtual Cable (or Virtual Audio Cable)** is **REQUIRED**.
+
+1. Download and install [VB-Audio Cable](https://vb-audio.com/Cable/).
+2. Set **CABLE Input** as your **Default Playback Device** in Windows Sound settings.
+3. Configure **CABLE Input** speaker setup in Windows to **5.1 Surround**.
+4. Run **AudioDownmixerGUI**, select **CABLE Output** as the input source, and choose your main stereo output device (AV Receiver, Soundbar, or Headphones).
+
+---
+
+## Features
+
+* **Real-time 5.1 to DPL II Matrix Encoding:** Downmixes Surround L/R, Center, Subwoofer, and Rear Surround channels into standard stereo output.
+* **Low Latency:** Uses WASAPI Loopback capture for minimal latency during gaming and media playback.
+* **System Tray Integration:** Runs quietly in the background.
